@@ -28,7 +28,7 @@
         "clean": "rimraf dist",
         "serve:tailwind": "postcss src/assets/css/tailwind.css -o src/assets/css/tailwind.output.css",
         "prestart": "npm run clean && npm run serve:tailwind",
-        "dev": "npm run prestart && ELEVENTY_ENV=dev npx eleventy --serve",
+        "dev": "npm run prestart && npx eleventy --serve",
         "build:tailwind": "NODE_ENV=production postcss src/assets/css/tailwind.css -o src/assets/css/tailwind.output.css",
         "prebuild": "npm run clean && npm run build:tailwind",
         "build": "snowpack build",

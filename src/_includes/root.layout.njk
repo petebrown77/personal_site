@@ -20,14 +20,6 @@
         <meta property="og:image:alt" content="Guy with a computer!"/>
         <meta property="og:url" content="{{ metadata.url }}"/>
 
-        {# twitter tags #}
-        <meta name="twitter:title" content="{{ title or metadata.title }}">
-        <meta name="twitter:card" content="summary_large_image">
-        <meta name="twitter:site" content="@username">
-        <meta name="twitter:description" content="{{ desc or metadata.small_desc }}">
-        <meta name="twitter:image" content="{{ metadata.url }}public/cover.jpg">
-        <meta name="twitter:creator" content="@username">
-
         {# icons #}
         <link rel="apple-touch-icon" sizes="180x180" href="{{'/public/apple-touch-icon.png' | url}}">
         <link rel="icon" type="image/png" sizes="32x32" href="{{'/public/favicon-32x32.png' | url}}">
